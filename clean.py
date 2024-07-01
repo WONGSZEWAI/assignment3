@@ -27,4 +27,6 @@ df = df[~df['job'].str.contains('insurance', case=False)]
 # Save the cleaned data to the output file
 df.to_csv(output, index=False)
 
+# Print the shape of the output file
+print(f"Output file shape: {df.shape}")
 print(f"Data cleaning completed. Output file saved at: {output}")
